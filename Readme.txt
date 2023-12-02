@@ -7,9 +7,8 @@ Testing Git upload from VS code
     # pip install yfinance
 
 2. Required libraries
+    # importing required libraries
     import datetime
     import yfinance as yf
-    import dash
-    import dash_core_components as dcc
-    import dash_html_components as html
+    from dash import Dash, html, dcc
     from dash.dependencies import Input, Output
