@@ -47,20 +47,53 @@
 # 	app.run_server()
 
 
-import pandas as pd
-import yfinance as yf
+# # Save stock details to a file
+# import pandas as pd
+# import yfinance as yf
 
-# df_yahoo = yf.download('MSFT', start='2020-01-01', end='2023-12-01', progress=False, actions="inline")
+# # df_yahoo = yf.download('MSFT', start='2020-01-01', end='2023-12-01', progress=False, actions="inline")
 
-# df_yahoo = yf.download('MSFT',actions="inline",auto_adjust=True)
+# # df_yahoo = yf.download('MSFT',actions="inline",auto_adjust=True)
 
-df_yahoo = yf.Ticker("MSFT")
+# df_yahoo = yf.Ticker("MSFT")
 
-#ln = df_yahoo.history(start="2020-01-01", end="2023-12-01",auto_adjust=True,actions="inline", period="max")
-ln = df_yahoo.history(auto_adjust=True,actions="inline", start="1980-01-01", end="2023-12-01" )
+# #ln = df_yahoo.history(start="2020-01-01", end="2023-12-01",auto_adjust=True,actions="inline", period="max")
+# ln = df_yahoo.history(auto_adjust=True,actions="inline", start="1980-01-01", end="2023-12-01" )
 
-ln.to_csv("MSFT-prices.txt")
+# ln.to_csv("MSFT-prices.txt")
 
-# with open("MSFT-prices.txt", "a") as f:
-#     f.write(str(ln))
-# f.close()
+
+# # --- Complex type 
+# # numeric type
+# # nothing is passed
+# z = complex()
+# print("complex() with no parameters:", z)
+ 
+ 
+# # integer type
+# # passing first parameter only
+# complex_num1 = complex(5)
+# print("Int: first parameter only", complex_num1)
+ 
+# # passing both parameters
+# complex_num2 = complex(7, 2)
+# print("Int: both parameters", complex_num2)
+ 
+# # float type
+# # passing first parameter only
+# complex_num3 = complex(3.6)
+# print("Float: first parameter only", complex_num3)
+ 
+# # passing both parameters
+# complex_num4 = complex(3.6, 8.1)
+# print("Float: both parameters", complex_num4)
+# print()
+ 
+# # type
+# print(type(complex_num1))
+
+
+# # dynamic execution 
+# prog = 'print("The sum of 5 and 10 is", (5+10))'
+# exec(prog)
+
